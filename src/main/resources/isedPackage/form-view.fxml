@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="isedPackage.FormController">
+   <children>
+      <AnchorPane layoutY="-1.0" prefHeight="114.0" prefWidth="600.0" style="-fx-background-color: black;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="106.0" prefWidth="611.0" text="Система електронного документообігу" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <PasswordField fx:id="passwordField" layoutX="216.0" layoutY="234.0" prefHeight="32.0" prefWidth="190.0" />
+      <TextField fx:id="loginTF" layoutX="216.0" layoutY="168.0" prefHeight="32.0" prefWidth="190.0" />
+      <Label alignment="CENTER" layoutY="150.0" prefHeight="18.0" prefWidth="611.0" text="Логін">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="11.0" layoutY="216.0" prefHeight="18.0" prefWidth="600.0" text="Пароль">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="216.0" layoutY="302.0" mnemonicParsing="false" onAction="#loadClientForm" prefHeight="32.0" prefWidth="190.0" style="-fx-background-color: black;" text="Увійти" textFill="WHITE">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Bloom threshold="0.39" />
+         </effect>
+      </Button>
+      <Label fx:id="wrong" alignment="CENTER" layoutY="356.0" prefHeight="16.0" prefWidth="611.0" text="Невірний логін або пароль!" textAlignment="CENTER" textFill="RED" visible="false">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="14.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

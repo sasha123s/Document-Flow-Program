@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="isedPackage.ClientController">
+   <children>
+      <TreeView fx:id="treeView" prefHeight="400.0" prefWidth="200.0" />
+      <MenuBar layoutX="200.0" layoutY="1.0" prefHeight="27.0" prefWidth="398.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Створити">
+            <items>
+              <MenuItem fx:id="createOrder" mnemonicParsing="false" onAction="#callOrderWindow" text="Документ" />
+
+            </items>
+          </Menu>
+          <Menu fx:id="directoryInfo" mnemonicParsing="false" text="Властивості папки">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#callDirectoryInfo" text="..." />
+               </items></Menu>
+        </menus>
+      </MenuBar>
+      <ListView fx:id="listView" editable="true" layoutX="200.0" layoutY="54.0" prefHeight="348.0" prefWidth="398.0" />
+      <Label fx:id="directoryName" layoutX="200.0" layoutY="28.0" prefHeight="27.0" prefWidth="398.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
